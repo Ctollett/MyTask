@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/output.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <div class="flex flex-col bg-white w-screen h-screen bg-white">
+        <nav class="bg-gray-100">
+            <div class="w-[100%] mx-auto border bg-zinc-900 text-white">
+                <div class="flex justify-between">
+
+                <div class="flex gap-x-4">   
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2">
+                            <img class="h-6 w-6 mr-2" src="./icons/main_logo.svg">
+                            <span>My</span> <span class="text-violet-400">Task</span> 
+                        </a>
+                    </div>
+
+        </nav>   
+
+        <div class="flex flex-col justify-center items-center h-[100%] w-[100%] mt-24 gap-y-2" style="display: all" id="welcomePage">
+            <h1 class="text-[2em] font-bold">Welcome to <span>My</span><span class="text-violet-400">Task</span></h1>
+            <p>A Simple Solution for Organizing Your Life</p>
+            <button class="bg-violet-400 p-2 rounded-lg text-white" id="createTask">
+                <h1>Create a Task</h1>
+            </button>
+            <img class="sm:h-[60%] md:w-[40%]" src="./icons/Tech.svg">
+  
+        </div>   
+        
+        <div class="flex flex-col justify-center items-center mt-4 p-4 gap-y-2 w-screen" style="display: none" id="tasks">
+            <div class="flex flex-col bg-zinc-900 rounded-[10px] justify-bottom items-bottom gap-y-3 sm:w-[100%] md:w-[60%] lg:w-[50%] shadow-lg h-auto pl-8">
+             <form class="flex flex-row gap-x-6 bg-zinc-900 p-3 rounded-lg text-white justify-center items-center mt-8">
+                    <input type="text" class="focus:ring focus:ring-violet-400 task-input rounded-lg p-2 w-3/4 bg-zinc-600" placeholder="Enter Task">
+                    <button class="task-button bg-zinc-600 rounded-full p-3" type="submit">
+                        <img class="h-6 w-6" src="./icons/plus.svg">
+                    </button>
+                </form> 
+                <div class="filter-container flex flex-row text-zinc-600 gap-x-6 ml-14 cursor-pointer">
+                    <button class="filter-btn hover:text-violet-300 focus:text-violet-300" type="button" data-id="all">All</button>
+                    <button class="filter-btn hover:text-violet-300 focus:text-violet-300" type="button" data-id="completed">Complete</button>
+                    <button class="filter-btn hover:text-violet-300 focus:text-violet-300" type="button" data-id="pending">Pending</button>
+                </div>
+                <div class="task-container mr-12 overflow-y-scroll">
+                    <ul class="task-list"></ul>   
+                </div>
+            </div>
+        </div>   
+
+    </div>    
+                
+
+                   
+                
+        
+    <script src="main.js"></script>        

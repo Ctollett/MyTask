@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../MyTask/icons"
+		},
+		{
+			"path": "../MyTask/src"
+		},
+		{
+			"path": "../MyTask/dist"
+		}
+	]
+}
